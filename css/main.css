@@ -16,7 +16,7 @@ nav {
 
 nav h1 {
     display: inline-block;
-    float: right;
+    float: left;
 }
 
 nav ul {
@@ -41,6 +41,41 @@ nav li a:hover {
     color: green;
 }
 
-main {
-    padding-top: 150px;
+.container {
+    padding-top: 90px;
+    padding: 150px;
+}
+
+input[type="text"] {
+    width: 350px;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+main ul {
+  clear: right;
+  display: inline-block;
+
+}
+
+main li {
+  color: grey;
+  display: inline-block;
+}
+
+main li a:link {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+main li a {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.m_glass {
+  display: inline-block;
+  border-radius: 100%;
+
+  font-weight: 800;
 }

@@ -1,10 +1,17 @@
-.top_bar {
+* {
+    font-family: arial, sans-serif;
+}
+
+
+/* */
+
+nav.top_bar {
     background-color: #eee;
     border-top: 1px #ccc solid;
     border-bottom: 1px #ccc solid;
 }
 
-nav {
+nav.top_bar {
     position: fixed;
     padding-left: 10px;
     padding-right: 60px;
@@ -14,68 +21,141 @@ nav {
     color: purple;
 }
 
-nav h1 {
+nav.top_bar h1 {
     display: inline-block;
     float: left;
 }
 
-nav ul {
+nav.top_bar ul {
     padding-right: 30px;
     display: inline-block;
     list-style: none;
 }
 
-nav li {
+nav.top_bar li {
     display: inline-block;
     font-size: 1.2em;
-    font-family: arial, sans-serif;
     margin-left: 10px;
 }
 
-nav li a:link {
+nav.top_bar li a:link {
     color: purple;
     text-decoration: none;
 }
 
-nav li a:hover {
+nav.top_bar li a:hover {
     color: green;
 }
 
 .container {
-    padding-top: 90px;
-    padding: 150px;
+    padding-top: 100px;
+    padding-left: 80px;
+}
+
+
+/* Form Gregs_form */
+
+.gregs_form {
+    margin-bottom: 30px;
+}
+
+.gregs_form label {
+    position: relative;
+    bottom: 8px;
+}
+
+.search-inputs {
+    position: relative;
 }
 
 input[type="text"] {
-    width: 350px;
-    font-size: 1.5em;
+    width: 400px;
+    height: 26px;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    border-radius: 2px;
+    font-size: 15px;
+    border: 1px solid grey;
+}
+
+.btn-main-search {
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.m_glass {
+    display: inline-block;
+    border-radius: 100%;
+    height: 100%;
+}
+
+
+/* Navigation Pages */
+
+.pages {
+    margin-bottom: 30px;
+}
+
+nav.pages {
+    display: inline-block;
+    bottom: 30px;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+.pages-button {
+    display: inline-block;
+    padding: 8px 15px;
+}
+
+.pages-results {
+    display: inline-block;
+    padding: 8px 15px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.pages a:link {
+    text-decoration: none;
+}
+
+
+/* Display Results */
+
+.display_results {
+    margin-bottom: 15px;
+
+}
+
+.display_results ul {
+    display: inline-block;
+    -webkit-padding-start: 0px;
+}
+
+.display_results li {
+    color: grey;
+    display: block;
+    position: relative;
     margin-bottom: 15px;
 }
 
-main ul {
-  clear: right;
-  display: inline-block;
-
+.display_results li a:link {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
 }
-
-main li {
-  color: grey;
-  display: inline-block;
-}
-
-main li a:link {
+.display_results li a:visited {
   text-decoration: none;
   color: blue;
   font-weight: bold;
 }
 
-main li a {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.m_glass {
-  display: inline-block;
-  border-radius: 100%;
-
-  font-weight: 800;
+.display_results li a {
+    padding-left: 15px;
+    padding-right: 15px;
 }

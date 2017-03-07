@@ -11,7 +11,7 @@
 
 <body>
     <nav class="top_bar">
-      <h1>Gregslist</h1>
+        <h1>Gregslist</h1>
         <ul class="right">
             <li><a href="#">Post</a></li>
             <li>
@@ -20,29 +20,38 @@
         </ul>
     </nav>
     <main class="container">
-        <form action="" class="gregs_form">
-            <label for="">Search Jobs</label><br>
-            <input type="text" placeholder="Seach software jobs" name="searchbox" id="searchbox">
-            <img class="m_glass" src="images/magnifying-glass.png" alt="magnifying-glass">
-            <div class="display_results">
-                <ul>
-                    <li>June 22</li>
-                    <li><a href="#">Technical Project Manager</a></li>
-                    <li>Midtown East</li>
-                </ul>
-                <ul>
-                    <li>June 21</li>
-                    <li><a href="#">Frontend Developer</a></li>
-                    <li>SoHo</li>
-                </ul>
-                <ul>
-                    <li>June 20</li>
-                    <li><a href="#">Senior Python Developer/Cofouder</a></li>
-                    <li>Flatiron</li>
-                </ul>
+        <form action="/results/" class="gregs_form">
+            <label for="search-jobs">Search Jobs</label>
+            <div class="search-inputs">
+                <input type="text" placeholder="Seach software jobs" name="searchbox" id="searchbox">
+                <button type="button" name="button" class="btn-main-search">
+              <img class="m_glass" src="images/magnifying-glass.png" alt="magnifying-glass">
+            </button>
             </div>
-        </form>
 
+        </form>
+        <nav class="pages">
+          <a href="#" class="pages-button">< prev</a>
+          <span class="pages-results">1 to 100 of 179</span>
+          <a href="#" class="pages-button">next ></a>
+        </nav>
+        <div class="display_results">
+            <ul>
+                <li>
+                    <span>June 22</span>
+                    <span><a href="#">Technical Project Manager</a></span>
+                    <span>Midtown East</span>
+                </li>
+                <li><span>June 21</span>
+                    <span><a href="#">Frontend Developer</a></span>
+                    <span>SoHo</span>
+                </li>
+                <li><span>June 20</span>
+                    <span><a href="#">Senior Python Developer/Cofouder</a></span>
+                    <span>Flatiron</span>
+                </li>
+            </ul>
+        </div>
     </main>
 </body>
 
